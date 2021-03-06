@@ -40,6 +40,25 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="especialidad" class="col-md-4 col-form-label text-md-right">{{ __('Especialidad') }}</label>
+                            <div class="col-md-6">
+                            <select id="role" class="form-control">
+                              <option selected style="text-align: center">--Selecionar Role--</option>
+                              <option>Administrador</option>
+                              <option>Vendedor T1</option>
+                              <option>Vendedor T3</option>
+                            </select>
+
+                            @if ($errors->has('especialidad'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('especialidad') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
