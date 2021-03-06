@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    @extends('Include.Layout')
                 </div>
             </div>
         </div>
